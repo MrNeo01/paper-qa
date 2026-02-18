@@ -19,7 +19,7 @@ from paperqa.settings import (
     get_formatted_variables,
     get_settings,
 )
-from paperqa.types import Doc, DocDetails
+from paperqa.types import Doc, DocDetailsuv
 from paperqa.utils import get_year
 from tests.conftest import TESTS_DIR
 

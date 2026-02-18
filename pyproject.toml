@@ -29,18 +29,20 @@ classifiers = [
 ]
 dependencies = [
     "anyio",
-    "fhaviary[llm]>=0.27",  # For partial tool concurrency
-    "fhlmi>=0.41.0",  # Pin for LiteLLMModel.get_router
-    "html2text",  # TODO: evaluate moving to an opt-in dependency
+    "fhaviary[llm]>=0.27", # For partial tool concurrency
+    "fhlmi>=0.41.0", # Pin for LiteLLMModel.get_router
+    "html2text", # TODO: evaluate moving to an opt-in dependency
     "httpx",
     "httpx-aiohttp",
     "numpy",
-    "paper-qa-pypdf",  # TODO: after https://peps.python.org/pep-0771/, make this opt-out if 'pymupdf' extra is specified`
+    "paper-qa-pypdf", # TODO: after https://peps.python.org/pep-0771/, make this opt-out if 'pymupdf' extra is specified`
     "pybtex",
     "pydantic-settings",
-    "pydantic~=2.0,>=2.10.1",  # Pin 2.10 for typing breaks
+    "pydantic~=2.0,>=2.10.1", # Pin 2.10 for typing breaks
+    "pypdf>=6.6.0",
+    "pytest>=9.0.2",
     "rich",
-    "setuptools",  # TODO: remove after release of https://bitbucket.org/pybtex-devs/pybtex/pull-requests/46/replace-pkg_resources-with-importlib
+    "setuptools", # TODO: remove after release of https://bitbucket.org/pybtex-devs/pybtex/pull-requests/46/replace-pkg_resources-with-importlib
     "tantivy",
     "tenacity",
     "tiktoken>=0.4.0",
